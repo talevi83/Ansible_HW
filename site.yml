@@ -1,0 +1,4 @@
+--- 
+- hosts: nodes
+  tasks: 
+    - include_tasks: install_packages.yml

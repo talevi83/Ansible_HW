@@ -1,0 +1,15 @@
+---
+- name: Install vim and zip on servers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure vim is installed
+      ansible.builtin.package:
+        name: vim
+        state: present
+
+    - name: Ensure zip is installed
+      ansible.builtin.package:
+        name: zip
+        state: present
+
