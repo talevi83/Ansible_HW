@@ -1,0 +1,15 @@
+---
+- name: Deploy hostname template
+  template:
+    src: hostname.j2
+    dest: /tmp/test2
+    mode: '0644'
+
+- name: Verify file content
+  command: cat /tmp/test2
+  register: file_content
+  changed_when: false
+
+- name: Display file content
+  debug:
+    var: file_content.stdout
