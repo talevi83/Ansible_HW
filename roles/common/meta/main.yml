@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: Tal Levi
+  description: Common role for basic server setup
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all

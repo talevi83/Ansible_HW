@@ -1,4 +1,7 @@
 --- 
 - hosts: nodes
-  tasks: 
-    - include_tasks: install_packages.yml
+ # tasks: 
+ #   - include_tasks: install_packages.yml
+
+ roles: 
+   - common
