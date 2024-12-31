@@ -1,7 +1,9 @@
 --- 
 - hosts: nodes
+ # Task 1 - The first version where I did not used role.
  # tasks: 
  #   - include_tasks: install_packages.yml
 
+ # Task 3 - role based playbook. 
  roles: 
    - common
