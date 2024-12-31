@@ -7,3 +7,4 @@
  # Task 3 - role based playbook. 
  roles: 
    - common
+   - deploy_file 

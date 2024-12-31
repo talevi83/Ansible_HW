@@ -1,0 +1,15 @@
+---
+- name: Create file with Hello World content
+  copy:
+    content: "Hello World"
+    dest: "/tmp/test1"
+    mode: '0644'
+
+- name: Verify file content
+  command: cat /tmp/test1
+  register: file_content
+  changed_when: false
+
+- name: Display file content
+  debug:
+    var: file_content.stdout
